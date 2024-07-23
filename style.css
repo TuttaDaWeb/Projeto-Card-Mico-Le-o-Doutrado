@@ -17,15 +17,19 @@
 }
 .card-front img{
     position: absolute;
-    top: 25%;
-    left: 30%;
     width: 480px;
     height: 320px;
     border-radius: 10px;
 }
-.card-back h1{
-    backface-visibility: hidden;
+.card-back{
+    backface-visibility: visible;
     width: 480px;
     height: 320px;
-    background-color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+.card-back h1{
+    backface-visibility: visible;
+    transform: rotateY(180deg);
+    color: white;
 }
