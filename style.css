@@ -1,0 +1,31 @@
+.card{
+    position: absolute;
+    top: 25%;
+    left: 30%;
+}
+.card-inner{
+    width: 480px;
+    height: 320px;
+    transform-style: preserve-3d;
+    transition: linear 0.1s 0.2s;
+}
+.card:hover .card-inner{
+    transform: rotateY(180deg);
+}
+.card-front{
+    backface-visibility: hidden;
+}
+.card-front img{
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 480px;
+    height: 320px;
+    border-radius: 10px;
+}
+.card-back h1{
+    backface-visibility: hidden;
+    width: 480px;
+    height: 320px;
+    background-color: white;
+}
